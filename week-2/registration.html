@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1 style="align-content: center;
+        text-align: center;"> 
+      Student Registration Form</h1>
+    <table border="1" align="center" cellspacing="0" cellpadding="20">
+        <caption>Student Details</caption>
+        
+        <tr>
+            <td>Full Name:</td>
+            <td><input type="text" placeholder="Enter your Full Name" ></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" placeholder="example@email.com"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" size="20"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number:</td>
+            <td><input type="number" placeholder="10-digit number"></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+        <td><input type="number" min="18" max="90"></td> 
+        </tr>
+        <tr>    
+            <td>Date of Birth:</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio"
+            name="gender" value="male">Male
+            <input type="radio"
+            name="gender" value="female">Female
+            <input type="radio"
+            name ="gender" value="other">Other
+            </td>
+        </tr>
+        <tr>
+            <td>Courses Interested:</td>
+            <td>
+            <input type="checkbox"
+            value="C">C         
+            <input type="checkbox" value="C++">CPP
+            <input type="checkbox"
+            value="java">Java
+            <input type="checkbox"
+            value="python">Python
+            <input type="checkbox"
+            value="Web Development">Web Development
+         </td>
+         </tr>
+         <tr>
+         <td>Branch:</td>
+           <td><select>
+                <option>--select your branch----</option>
+                <option>CE</option>
+                <option>EEE</option>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>IT</option>
+                <option>MECH</option>
+            </select> </td>
+         </tr>
+        <tr>
+            <td>College Website:</td>
+            <td><input type="text" placeholder="https://www.example.com"></td>
+        </tr>
+       <tr>
+      <td>Address:</td>
+           <td><textarea rows="5" cols="30" placeholder="Enter your Address"></textarea></td>
+       </tr>
+       <tr>
+        <td>Upload Resume:</td>
+        <td><select>
+            <option>Choose file
+            </select>
+            No file choosen</option>
+        </td>
+        </tr>
+        <tr>
+            <td>Preferred Time Slot:</td>
+            <td><input type="time"></td>
+        </tr>
+        <tr>
+          <td>Skill Level(0-10):</td>
+            <td><input type="range" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Favorite Color:</td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+          <td colspan="2" align="center"></td>
+             </tr>
+        <tr>
+            <td colspan="2" align="center">
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </td>
+        </tr>
+    </table>
+</body>
+</html>

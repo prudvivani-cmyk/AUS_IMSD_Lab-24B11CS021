@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Object Demo</title>
+  <script>
+    function stringDemo() {
+      let str = "Hello JavaScript";
+      let result = "";
+
+      result += "Original String: " + str + "<br>";
+      result += "Length: " + str.length + "<br>";
+      result += "Uppercase: " + str.toUpperCase() + "<br>";
+      result += "Lowercase: " + str.toLowerCase() + "<br>";
+      result += "Substring (0–5): " + str.substring(0, 5) + "<br>";
+      result += "Index of 'Script': " + str.indexOf("Script") + "<br>";
+      result += "Replace 'Hello' → 'Hi': " + str.replace("Hello", "Hi");
+
+      document.getElementById("out").innerHTML = result;
+    }
+  </script>
+</head>
+<body>
+  <h3>String Object Example</h3>
+  <button onclick="stringDemo()">Show String Operations</button>
+  <p id="out"></p>
+</body>
+</html>

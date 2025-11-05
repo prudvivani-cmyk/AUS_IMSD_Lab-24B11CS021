@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Object Demo</title>
+  <script>
+    function showMathOps() {
+      let num = 25.67;
+      let result = "";
+
+      // Properties
+      result += "Math.PI = " + Math.PI + "<br>";
+      result += "Math.E = " + Math.E + "<br><br>";
+
+      // Methods
+      result += "Number: " + num + "<br>";
+      result += "Round: " + Math.round(num) + "<br>";
+      result += "Floor: " + Math.floor(num) + "<br>";
+      result += "Ceil: " + Math.ceil(num) + "<br>";
+      result += "Square Root: " + Math.sqrt(num) + "<br>";
+      result += "Power (2³): " + Math.pow(2, 3) + "<br>";
+      result += "Random (0–1): " + Math.random().toFixed(2) + "<br>";
+      result += "Absolute (-8): " + Math.abs(-8) + "<br>";
+      result += "Max(10, 20, 5): " + Math.max(10, 20, 5) + "<br>";
+      result += "Min(10, 20, 5): " + Math.min(10, 20, 5) + "<br>";
+
+      document.getElementById("output").innerHTML = result;
+    }
+  </script>
+</head>
+<body>
+  <h3>Math Object Properties and Methods</h3>
+  <button onclick="showMathOps()">Show Math Operations</button>
+  <p id="output"></p>
+</body>
+</html>

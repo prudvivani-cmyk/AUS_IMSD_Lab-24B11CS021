@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Object Demo</title>
+  <script>
+    function showArrayOps() {
+      let fruits = ["Apple", "Banana", "Mango"];
+      let result = "";
+
+      result += "Original: " + fruits + "<br>";
+      result += "Length: " + fruits.length + "<br>";
+
+      fruits.push("Orange");
+      fruits.pop();
+      fruits.unshift("Strawberry");
+      fruits.shift();
+
+      result += "Index of Banana: " + fruits.indexOf("Banana") + "<br>";
+      result += "Joined: " + fruits.join(" | ") + "<br>";
+      result += "<b>Final Array:</b> " + fruits;
+
+      document.getElementById("output").innerHTML = result;
+    }
+  </script>
+</head>
+<body>
+  <h3>Array Object Properties and Methods</h3>
+  <button onclick="showArrayOps()">Show Operations</button>
+  <p id="output"></p>
+</body>
+</html>

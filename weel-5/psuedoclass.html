@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .form1{
+            width:30%;
+            margin: 10px auto;
+            border: 5px solid salmon;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .item{
+            margin-top: 10px;
+        }
+        input:focus{
+            border: 4px solid blue;
+        }
+        input:required{
+            background-color: lightyellow;
+        }
+        input[type="submit"]:hover{
+            background-color: orange;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="form1">
+            <h1 style="text-align: center;">Login form</h1>
+        <form action="">
+            <div class="item"><input type="text" name="uname" placeholder="Enter user name" required/></div>
+            <div class="item"><input type="password" name="pwd" placeholder="Enter your password" required/></div>
+            <div class="item"><input type="submit" value="Login"/></div>
+        </form>
+        </div>
+    </body>
+</html>
